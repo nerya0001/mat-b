@@ -34,7 +34,7 @@ string ariel::mat(int a, int b, char c, char d) {
         
 
         // make circles that get smaller and smaller untill you get to the center
-        for (int i = 0, j = a - 1, f = b - 1; i < b; i++, j--, f--) {
+        for (int i = 0, j = a - 1, f = b - 1; i < b/2 + 1; i++, j--, f--) {
             for (int k = i; k <= j; k++) {
                 if (i % 2 == 0) {
                     mat_matrix[i][k] = c;
